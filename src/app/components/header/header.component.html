@@ -1,0 +1,19 @@
+<div class="bcp-flow-header">
+  <h1 class="bcp-flow-header-heading">{{heading}}</h1>
+  <span class="bcp-flow-header-line" id="bcpflowheaderline">
+                    <span id="first-last-name" class="bcp-bve-user-name" data-role="full-name">{{userName}}</span>
+                    <strong id="phone-no" class="bcp-bve-user-phone" data-role="phone-number"> {{phoneNumber}}</strong>
+                    <span class="bcp-bve-feature-title">{{featureTitle}}</span>
+                </span>
+  <div class="bcp-dropdown bcp-dropdown-edit-custom bcp-margin-top--small" data-component="dropdown-menu"
+       id="switchAccounts">
+    <span class="accessibly-hidden">Currently selected option:</span>
+    <button class="bcp-dropdown-btn" id="bcp-account-switcher" data-role="dropdown-menu-trigger" aria-expanded="false"
+            aria-haspopup="true" aria-owns="bcp-account-options">
+      <div class="bcp-dropdown-option bcp-dropdown-option-current">
+        <span class="bcp-option-account-name">Awesome1</span>
+        <span class="bcp-option-account-detail">145 DRCSG93421BUS RD</span>
+      </div>
+    </button>
+  </div>
+</div>

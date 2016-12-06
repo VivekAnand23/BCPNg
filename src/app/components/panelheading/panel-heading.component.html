@@ -1,0 +1,10 @@
+<div class="bcp-panel-header--stack-on-mobile">
+<span class="bcp-font-headline-xl">
+  Voicemail: Inbox
+<notification-badge [notificationCount]="5"></notification-badge>
+<a href="javascript:void(0)" *ngIf="reload"><i class="bcp-icon bcp-icon-reload-blue"><span class="accessibly-hidden">Reload</span></i></a>
+</span>
+  <div class="bcp-panel-action bcp-panel-action--persistent bcp-display-label--persistent">
+    <p>Displaying <span>{{startNummber}}</span> - <span>{{endNumber}}</span> of <span>{{totalNumber}}</span></p>
+  </div>
+</div>

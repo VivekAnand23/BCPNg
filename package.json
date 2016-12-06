@@ -1,7 +1,8 @@
 {
-  "name": "angular2-quickstart",
+  "name": "bcp-ng2",
+  "author": "Vivek Anand",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "BCP Sample Page Component",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
@@ -19,7 +20,6 @@
     "webdriver:update": "webdriver-manager update"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@angular/common":  "2.0.0",

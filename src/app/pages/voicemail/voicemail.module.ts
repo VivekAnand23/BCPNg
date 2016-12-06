@@ -4,11 +4,10 @@ import {CommonModule} from '@angular/common';
 import {VoicemailComponent} from './voicemail.component';
 import {VoicemailRouting} from './voicemail.routing';
 
-import {WidgetsModule} from "../widgets/widgets.module";
-import {ComponentsModule} from "../components/components.module";
+import {ComponentsModule} from "../../components/components.module";
 
 @NgModule({
-  imports: [CommonModule, VoicemailRouting, ComponentsModule, WidgetsModule],
+  imports: [CommonModule, VoicemailRouting, ComponentsModule],
   declarations: [VoicemailComponent],
   exports: [VoicemailComponent, CommonModule]
 })

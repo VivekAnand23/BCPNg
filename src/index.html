@@ -1,25 +1,228 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Angular 2 QuickStart</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+<head>
+  <base href="/">
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+  <title>COMCAST - BCP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/bundle-global-css.css">
 
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-  </head>
+  <!-- Polyfill(s) for older browsers -->
+  <script src="../node_modules/core-js/client/shim.min.js"></script>
 
-  <body>
-    <my-app>Loading...</my-app>
-  </body>
+  <script src="../node_modules/zone.js/dist/zone.js"></script>
+  <script src="../node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="../node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('app').catch(function (err) {
+      console.error(err);
+    });
+  </script>
+</head>
+
+<body>
+<div class="bcp-header-container">
+  <div class="bcp-background bcp-bg-header" data-tracking-parent=""
+       data-tracking="{&quot;eventName&quot;:&quot;Header&quot;}">
+    <header>
+      <nav role="navigation">
+        <div class="bcp-container">
+          <div class="bcp-col bcp-nav bcp-nav--main bcp-nav-container bcp-accordion" data-component="drawer">
+            <div class="bcp-nav-mobile-navbar">
+              <button type="button" class="bcp-triptych-activator bcp-nav-mobile-button" aria-haspopup="true"
+                      data-role="trigger" aria-controls="mobile-container" aria-expanded="false">
+                <i class="bcp-icon bcp-icon-triptych" aria-hidden="false"><img
+                  src="./Comcast Business _ Voicemail Inbox_files/20F297039AC2414AB37F030DD3004675.ashx"><span
+                  class="accessibly-hidden">Open navigation menu</span></i>
+                <i class="is-hidden bcp-icon bcp-icon-close" aria-hidden="true"><img
+                  src="./Comcast Business _ Voicemail Inbox_files/EFED323668FC4051A981DC4A6ACAD90C.ashx"
+                  alt="close"><span class="accessibly-hidden">Close navigation menu</span></i>
+              </button>
+              <a class="bcp-logo bcp-nav-logo" href="#"
+                 data-tracking="{&quot;eventName&quot;:&quot;Header|Comcast Business Logo&quot;, &quot;eventAction&quot;:&quot;click&quot;}">
+                <!--[if lte IE 8]>
+                <img src="./images/logo-comcast-business-rev.svg" alt="Comcast Business"/>
+                <![endif]-->
+                <img src="./images/logo-comcast-business-rev.svg" alt="Comcast Business">
+                <span class="accessibly-hidden">Go to the Comcast Business Homepage</span>
+              </a>
+            </div><!-- end nav mobile navbar -->
+            <div id="mobile-container" class="bcp-nav-mobile-container" data-role="content" aria-hidden="true">
+              <div class="bcp-nav-profile">
+                <div class="bcp-nav-profile-greeting">
+                  <span>Hi, </span><span>usergg</span> <span>one</span>
+                </div>
+                <div class="bcp-nav-utility-nav">
+                  <ul class="bcp-utility-nav nav-utility-mobile">
+                    <li><a href="https://businessclass.qa5.comcast.net/Secure/MyAccount/UserSettingsDetails/"
+                           onclick="editProfileClick()"
+                           data-tracking="{&quot;eventName&quot;:&quot;Header|Edit&quot;, &quot;eventAction&quot;:&quot;click&quot;}">Edit</a>
+                    </li>
+                    <li><a href="https://businessclass.qa5.comcast.net/mvc/bcp/Logout"
+                           data-tracking="{&quot;eventName&quot;:&quot;Header|Sign Out&quot;, &quot;eventAction&quot;:&quot;click&quot;}">Sign
+                      Out</a></li>
+                  </ul>
+                </div>
+                <ul class="bcp-notifications bcp-nav-notifications">
+                </ul>
+              </div><!-- end nav profile -->
+              <div class="bcp-nav-mobile-utility">
+                <div class="bcp-nav-mobile-utility-search" data-component="site-search">
+                  <form action="http://business2.comcast.com/searchresults/businesshelp?q={0}" method="get"
+                        id="bcp-search-form-mobile" target="_blank" class="bcp-nav-mobile-utility-search-component"
+                        data-role="search-form">
+                    <input type="hidden" name="indexCatalogue" value="smb">
+                    <input type="hidden" name="wordsMode" value="0">
+                    <i class="bcp-icon bcp-icon-default">
+                      <img src="./images/topnav_search.svg" alt="site search">
+                    </i>
+                    <label for="search-mobile" class="accessibly-hidden bcp-search">submit</label>
+                    <input id="search-mobile" data-role="search-field" type="search" name="searchQuery"
+                           placeholder="Search">
+                    <input data-role="search-submit" type="submit" value="Search" class="accessibly-hidden"
+                           tabindex="0">
+                  </form>
+                </div>
+              </div>
+              <div class="bcp-nav-primary-links">
+                <ul class="bcp-nav-menu bcp-nav-menu-list">
+                  <li class="is-current bcp-accordion" data-component="drawer">
+                    <a href="https://businessclass.qa5.comcast.net/Secure/MyAccount/Home/" target="" title=""
+                       class="bcp-nav-menu-link--desktop-only"
+                       data-tracking="{&quot;eventName&quot;:&quot;Header|MY ACCOUNT&quot;, &quot;eventAction&quot;:&quot;click&quot;}">MY
+                      ACCOUNT</a>
+                    <button target="" title="" aria-haspopup="true" data-role="trigger"
+                            aria-controls="my-account-sublinks" aria-expanded="false"
+                            class="bcp-nav-menu-link--mobile-only">MY ACCOUNT
+                    </button>
+
+
+                    <div id="my-account-sublinks" class="bcp-nav-subnav bcp-subnav" data-role="content"
+                         aria-hidden="true">
+
+                      <div class="bcp-subnav-block">
+                        <p class="bcp-subnav-label">Manage Account</p>
+                        <ul class="bcp-nav-menu bcp-subnav-list">
+                          <li><a data-menu-selection="BILL"
+                                 href="https://businessclass.qa5.comcast.net/Secure/MyAccount/Bills/BillLanding/"
+                                 title=""
+                                 data-tracking="{&quot;eventName&quot;:&quot;Header|Bills&quot;, &quot;eventAction&quot;:&quot;click&quot;}">Bills</a>
+                          </li>
+                          <li><a data-menu-selection="USERS"
+                                 href="https://businessclass.qa5.comcast.net/Secure/MyAccount/ManageUsersSettings"
+                                 title=""
+                                 data-tracking="{&quot;eventName&quot;:&quot;Header|Users&quot;, &quot;eventAction&quot;:&quot;click&quot;}">Users</a>
+                          </li>
+                          <li><a data-menu-selection="ACCOUNTS"
+                                 href="https://businessclass.qa5.comcast.net/Secure/MyAccount/Account/AccountDetails/"
+                                 title=""
+                                 data-tracking="{&quot;eventName&quot;:&quot;Header|Account Details&quot;, &quot;eventAction&quot;:&quot;click&quot;}">Account
+                            Details</a></li>
+                        </ul>
+                      </div><!-- end subnav block -->
+                      <div class="bcp-subnav-block">
+                        <p class="bcp-subnav-label">My Service Tools</p>
+                        <ul class="bcp-nav-menu bcp-subnav-list">
+                          <li><a href="https://businessclass.qa5.comcast.net/Secure/ManageServices/MyServices/"
+                                 target="" title="" data-menu-selection="MYSERVICES"
+                                 data-tracking="{&quot;eventName&quot;:&quot;Header|Manage&quot;, &quot;eventAction&quot;:&quot;click&quot;}">Manage</a>
+                          </li>
+                        </ul>
+                      </div><!-- end subnav block -->
+                      <div class="bcp-subnav-block">
+                        <p class="bcp-subnav-label">Business Voice Edge</p>
+                        <ul class="bcp-nav-menu bcp-subnav-list">
+                          <li><a
+                            href="https://businessclass.qa5.comcast.net/Secure/ManageServices/BVE/VoiceMailInbox?GroupId=5246&amp;UserId=cdavies7705"
+                            target="" title="" data-menu-selection="MYSERVICES"
+                            data-tracking="{&quot;eventName&quot;:&quot;Header|Business Voice Edge&quot;, &quot;eventAction&quot;:&quot;click&quot;}">BVE</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div> <!-- end nav-subnav -->
+
+                  </li><!--end My Account drawer-->
+                  <li><a href="http://businesshelp.comcast.com/help-and-support" target="" title=""
+                         data-tracking="{&quot;eventName&quot;:&quot;Header|SUPPORT&quot;, &quot;eventAction&quot;:&quot;click&quot;}">SUPPORT</a>
+                  </li>
+                  <li><a href="http://www.business.comcast.com/" target="_blank" title=""
+                         data-tracking="{&quot;eventName&quot;:&quot;Header|SHOP SERVICES&quot;, &quot;eventAction&quot;:&quot;click&quot;}">SHOP
+                    SERVICES</a></li>
+                  <li><a
+                    href="https://idp.comcast.net/idp/startSSO.ping?PartnerSpId=upware.comcast.com&amp;TargetResource=https%3a%2f%2fupware.comcast.com%2fhome?intcmp%3dILCCOMCOMQGP9T7"
+                    target="_blank" title=""
+                    data-tracking="{&quot;eventName&quot;:&quot;Header|APP MARKETPLACE&quot;, &quot;eventAction&quot;:&quot;click&quot;}">APP
+                    MARKETPLACE</a></li>
+                </ul>
+              </div><!-- nav primary links -->
+            </div><!-- end nav main container -->
+          </div><!-- end nav main component -->
+        </div><!-- end nav container -->
+      </nav>
+    </header>
+  </div>
+
+  <div class="bcp-background bcp-bg-secondary bcp-bg-shadow bcp-nav-subnav-bg" data-tracking-parent="">
+    <div class="bcp-container">
+      <div class="bcp-nav-subnav-container bcp-col">
+        <div class="bcp-nav-search" data-component="site-search">
+          <form action="http://business2.comcast.com/searchresults/businesshelp?q={0}" method="get"
+                id="bcp-search-form" target="_blank" class="bcp-search-component" data-component="drawer"
+                data-role="search-form">
+            <button class="bcp-search-link" data-role="trigger" type="button" aria-controls="search-container"
+                    aria-expanded="false"
+                    data-tracking="{&quot;eventName&quot;:&quot;Header|Open Search&quot;, &quot;eventAction&quot;:&quot;click&quot;}">
+              <input type="hidden" name="" value="">
+              <input type="hidden" name="" value="">
+              <i class="bcp-icon bcp-search-link-icon">
+                <!-- placeholder search icon image-->
+                <img src="./images/topnav_search.svg" alt="search">
+              </i>
+              <span class="bcp-search-link-text">Search</span>
+            </button>
+            <div id="search-container" class="bcp-container bcp-search-container" aria-hidden="true"
+                 data-role="content">
+              <div class="bcp-search-holder">
+                <i class="bcp-icon bcp-icon-default">
+                  <!-- placeholder search icon image -->
+                  <img src="./images/topnav_search.svg" alt="site search">
+                </i>
+                <label for="search" class="accessibly-hidden bcp-search">submit</label>
+                <input id="search" data-role="search-field" type="search" name="" tabindex="0"
+                       placeholder="What are you looking for?">
+              </div>
+              <input data-role="search-submit" type="submit" class="bcp-btn bcp-btn--primary bcp-btn--small"
+                     tabindex="0" value="Search"
+                     data-tracking="{&quot;eventName&quot;:&quot;Header|Go Search&quot;, &quot;eventAction&quot;:&quot;click&quot;}">
+            </div>
+          </form>
+        </div>
+      </div><!-- end subnav container -->
+    </div><!-- end container -->
+  </div>
+  <!-- end background -->
+  <!-- New Chat Implementation -->
+
+
+  <div class="bcp-toast" data-component="bcp-toast" aria-live="polite">
+    <span class="bcp-toast-message" data-role="message"></span>
+  </div>
+</div>
+
+<main>
+  <div class="bcp-container">
+    <app-container>Loading...</app-container>
+  </div>
+</main>
+
+<!-- add for bundle usage -->
+<!-- <script src="dist/bundle.min.js"></script> -->
+<!-- add for bundle usage -->
+
+</body>
 </html>
